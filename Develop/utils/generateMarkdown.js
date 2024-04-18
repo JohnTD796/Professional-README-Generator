@@ -1,19 +1,28 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  // idk what the license badge is
+  switch(license){
+    case 'No License':
+      return ''
+      break;
+    case 'Apache':
+      return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+      break;
+    case 'BSD':
+      return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
+      break;
+    case 'MIT':
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+      break;
+  }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  // is this where i create a switch statement for the different license types?
-  
-  
   switch (license) {
     case 'No License':
-      return  ''
-      
+      return ``
       break;
 
     case 'Apache':
@@ -277,18 +286,16 @@ function renderLicenseLink(license) {
       `
       break;
   }
-
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  // is this where i create a variable for the formatting of the license section like the html in the miniproject
   renderLicenseLink(license);
-  let licenseSection = ''
-  let licenseToC = ''
-  
-  if (license = 'No License') {
+  let licenseSection = '';
+  let licenseToC = '';
+
+  if (license === 'No License') {
     licenseSection
     licenseToC
     return [licenseSection, licenseToC]
@@ -301,10 +308,9 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
- console.log(data) // renderLicenseLink(license);
- let licenseData = renderLicenseSection(data.license);
-
-  return `# ${data.title}
+  let licenseData = renderLicenseSection(data.license);
+  
+  return `# ${data.pTitle}
   
   ## Description
   ${data.description}
@@ -314,7 +320,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Credits](#credits)
   - [Demo](#demo)
-  - [GitHub Repository](#github repository)
+  - [GitHub-Repository](#github-repository)
   ${licenseData[1]}
 
   ## Installation
@@ -332,11 +338,12 @@ function generateMarkdown(data) {
   ## Demo
   ${data.demo}
 
-  ## Gihub Repository
+  ## Gihub-Repository
   ${data.githubRepo}
 
   ${licenseData[0]}
-  ${data.license}
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
 `;
 }
 
