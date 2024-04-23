@@ -25,7 +25,6 @@
   Myself (John Doyle)
 
   ## Demo
-  <video width = "320" height = "240" controls>
     <source src = "./Video-Demo/ReadmeDemo.mp4" type = "Video/mp4">
 
   ## Gihub-Repository
