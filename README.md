@@ -1,7 +1,7 @@
-# awdawdad
+# Professional-README-Generator
   
   ## Description
-  awdawd
+  This is an application to create a professional README.md file from the terminal. It includes formatting of the document as well as placing responses to questions into the appropriate categories.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -12,22 +12,24 @@
   - [License](#license)
 
   ## Installation
-  awdawddaw
+  Download my repository from GitHub.
 
   ## Usage
-  awdawdwd
+  Open the terminal in the develop folder and type node index.js and press 'enter'.
+  Answer the questions accordingly and your professional README file will be generated.
 
   ## Technologies
-  awdawdawd
+  VsCode, Node.js, NPM
 
   ## Credits
-  awdawdawd
+  Myself (John Doyle)
 
   ## Demo
-  awdawd
+  <video width = "320" height = "240" controls>
+    <source src = "./Video-Demo/ReadmeDemo.mp4" type = "Video/mp4">
 
   ## Gihub-Repository
-  awdawwdawdaw
+  https://github.com/JohnTD796/Professional-README-Generator.git
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
