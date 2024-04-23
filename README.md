@@ -25,7 +25,7 @@
   Myself (John Doyle)
 
   ## Demo
-    <a href = "./Video-Demo/ReadmeDemo.mp4" type = "Video/mp4">
+    <a href = "./Develop/Video-Demo/ReadmeDemo.mp4" type = "Video/mp4">Watch the video demo.</a>
 
   ## Gihub-Repository
   https://github.com/JohnTD796/Professional-README-Generator.git
